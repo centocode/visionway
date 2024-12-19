@@ -1,1 +1,23 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marketing-auto-backend-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      env: prod
+    matchExpressions:
+      - key: env
+        operator: In
+        values: 
+          - prod
+  template:
+    metadata:
+      name: marketing-auto-pod
+      labels:
+        env: prod
+    spec:
+      containers:
+      - name: marketing-auto
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/marketing-automation-backend-prod:6885
