@@ -21,3 +21,10 @@ spec:
       containers:
       - name: marketing-auto
         image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/marketing-automation-backend-prod:6885
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
