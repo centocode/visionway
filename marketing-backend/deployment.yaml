@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: marketing-auto
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/marketing-automation-backend-prod:7080
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/marketing-automation-backend-prod:7086
         resources:
           requests:
             memory: "256Mi"
