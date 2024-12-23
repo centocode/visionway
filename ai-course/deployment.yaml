@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: ai-course
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/vibrant-backend-prod:7114
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/ai-course-finder-prod:7107
         resources:
           requests:
             memory: "128Mi"
