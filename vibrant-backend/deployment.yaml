@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: vibrant
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/vibrant-backend-prod:6474
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/vibrant-backend-prod:7115
         resources:
           requests:
             memory: "256Mi"
