@@ -10,7 +10,7 @@ spec:
     matchExpressions:
       - key: env
         operator: In
-        values:
+        values: 
           - prod
   template:
     metadata:
@@ -21,10 +21,3 @@ spec:
       containers:
       - name: vibrant
         image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/vibrant-backend-prod:7115
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
