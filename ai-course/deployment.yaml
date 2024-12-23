@@ -1,4 +1,4 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ai-course-finder-app
@@ -10,7 +10,7 @@ spec:
     matchExpressions:
       - key: env
         operator: In
-        values: 
+        values:
           - prod
   template:
     metadata:
@@ -21,3 +21,10 @@ spec:
       containers:
       - name: ai-course
         image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/ai-course-finder-prod:6897
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256"
+            cpu: "500m"
