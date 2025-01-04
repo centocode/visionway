@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionapply-frontend-prod:7457
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionapply-frontend-prod:7467
         resources:
           requests:
             memory: "128Mi"
