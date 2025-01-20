@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionapply-frontend-prod:7928
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionapply-frontend-prod:7932
         livenessProbe:
           httpGet:
             path: /
