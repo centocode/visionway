@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: visionway-crm-node
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       env: prod
