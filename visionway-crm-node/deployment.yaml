@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: visionway-crm-node
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       env: prod
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: visionway-crm-node
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-crm-node-prod:8079
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-crm-node-prod:8088
         resources:
           requests:
             memory: "9Gi"
