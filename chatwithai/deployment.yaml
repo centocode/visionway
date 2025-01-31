@@ -20,4 +20,4 @@ spec:
     spec:
       containers:
       - name: chatwithai
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-chatwithai-prod:6201
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-chatwithai-prod:8223
