@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vibrant-backend-app
+  name: chatwithai-app
 spec:
   replicas: 2
   selector:
@@ -14,10 +14,10 @@ spec:
           - prod
   template:
     metadata:
-      name: vibrant-pod
+      name: chatwithai-pod
       labels:
         env: prod
     spec:
       containers:
-      - name: vibrant
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/vibrant-backend-prod:7115
+      - name: chatwithai
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-chatwithai-prod:6201
