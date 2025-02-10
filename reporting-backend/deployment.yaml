@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: reporting-backend
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-reporting-backend-prod:8513
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-reporting-backend-prod:8516
         resources:
           requests:
             memory: "128Mi"
