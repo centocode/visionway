@@ -6,17 +6,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      env: prod
+      env: marketing-backend-prod
     matchExpressions:
       - key: env
         operator: In
         values: 
-          - prod
+          - marketing-backend-prod
   template:
     metadata:
       name: marketing-auto-pod
       labels:
-        env: prod
+        env: marketing-backend-prod
     spec:
       containers:
       - name: marketing-auto
