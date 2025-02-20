@@ -6,17 +6,17 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      env: prod
+      env: chatwithai-prod
     matchExpressions:
       - key: env
         operator: In
         values: 
-          - prod
+          - chatwithai-prod
   template:
     metadata:
       name: chatwithai-pod
       labels:
-        env: prod
+        env: chatwithai-prod
     spec:
       containers:
       - name: chatwithai
