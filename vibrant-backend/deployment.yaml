@@ -6,17 +6,17 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      env: prod
+      env: vibrant-backend-prod
     matchExpressions:
       - key: env
         operator: In
         values: 
-          - prod
+          - vibrant-backend-prod
   template:
     metadata:
       name: vibrant-pod
       labels:
-        env: prod
+        env: vibrant-backend-prod
     spec:
       containers:
       - name: vibrant
