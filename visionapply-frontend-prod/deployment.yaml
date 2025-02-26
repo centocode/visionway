@@ -6,11 +6,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      env: prod
+      env: frontend-prod
   template:
     metadata:
       labels:
-        env: prod
+        env: frontend-prod
     spec:
       containers:
       - name: frontend-app
