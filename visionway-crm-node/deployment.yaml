@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: visionway-crm-node
-        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-crm-node-prod:9883
+        image: 650378210006.dkr.ecr.ap-south-1.amazonaws.com/visionway-crm-node-prod:9903
         resources:
           requests:
             memory: "9Gi"
